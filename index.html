@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/animate.css" rel="stylesheet"/>
+   
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"/>
+
+    <meta charset="utf-8" />
+    <title>My SV</title>
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+  
+</head>
+
+<body>
+    <script src="http://apps.skaip.su/buttons/widget/core.min.js" defer="defer"></script>
+  
+    <script>
+       
+        $(document).ready(function () {
+           
+            $('#logo').slideDown(3000);
+            $('#table-menu').delay(2000).slideDown(2000);
+            $('.li1').delay(3000).show(1000);
+            $('.li2').delay(4000).show(1000);
+            $('.li3').delay(5000).show(1000);
+            $('.li4').delay(6000).show(1000);
+
+           
+
+            $('.li1').click(function () {
+                $('#p1').toggle(1000);              
+            });
+            var Text = ['p1', 'p2', 'p3'];
+            var index = 0;
+            var elem = document.getElementById(index);
+            setInterval(function () {
+                $(elem).toggle(500);
+                setTimeout(function () { $(elem).toggle(500) }, 1000);
+                if (index == Text.length) index = 0;
+                elem = document.getElementById(Text[index++]);
+            }, 8000);         
+        });
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 800);
+            });
+        });
+      
+        
+
+    </script>
+
+    <div id="head" class="col-lg-12">
+        <img class="head-beckgraund col-lg-12" src="img/computer.jpg" />
+        <div id="logo">
+            <img src="img/logo.jpg" />
+            <br />
+
+            <div class="anim col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="400" height="72px" viewBox="-20 0 100 36">
+                        <text style="font-size:20px;fill:#000000;font-family:Garamond" x="0" y="0">
+                            <tspan x="0" y="50">0</tspan>
+                            <tspan x="0" y="100">1</tspan>
+                            <tspan x="0" y="150">1</tspan>
+                            <tspan x="0" y="200">0</tspan>
+
+                            <animateMotion keyTimes="0; 0.075;0.175; 0.325; 0.425; 0.575;0.675;0.825;0.925; 1"
+                                           values="0,0;0,-25;0,-25;0,-75;0,-75;0,-125;0,-125;0,-175;0,-175;0,-204"
+                                           repeatCount="indefinite"
+                                           dur="4s"
+                                           calcMode="linear">
+                            </animateMotion>
+                        </text>
+                    </svg>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="400" height="72px" viewBox="-20 0 100 36">
+                        <text style="font-size:20px;fill:#000000;font-family:Garamond" x="0" y="0">
+                            <tspan x="0" y="50">1</tspan>
+                            <tspan x="0" y="100">0</tspan>
+                            <tspan x="0" y="150">1</tspan>
+                            <tspan x="0" y="200">0</tspan>
+
+                            <animateMotion keyTimes="0; 0.075;0.175; 0.325; 0.425; 0.575;0.675;0.825;0.925; 1"
+                                           values="0,0;0,-25;0,-25;0,-75;0,-75;0,-125;0,-125;0,-175;0,-175;0,-204"
+                                           repeatCount="indefinite"
+                                           dur="2s"
+                                           calcMode="linear">
+                            </animateMotion>
+                        </text>
+                    </svg>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="400" height="72px" viewBox="-20 0 100 36">
+                        <text style="font-size:20px;fill:#000000;font-family:Garamond" x="0" y="0">
+                            <tspan x="0" y="50">0</tspan>
+                            <tspan x="0" y="100">1</tspan>
+                            <tspan x="0" y="150">1</tspan>
+                            <tspan x="0" y="200">0</tspan>
+
+                            <animateMotion keyTimes="0; 0.075;0.175; 0.325; 0.425; 0.575;0.675;0.825;0.925; 1"
+                                           values="0,0;0,-25;0,-25;0,-75;0,-75;0,-125;0,-125;0,-175;0,-175;0,-204"
+                                           repeatCount="indefinite"
+                                           dur="1s"
+                                           calcMode="linear">
+                            </animateMotion>
+                        </text>
+                    </svg>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="400" height="72px" viewBox="-20 0 100 36">
+                        <text style="font-size:20px;fill:#000000;font-family:Garamond" x="0" y="0">
+                            <tspan x="0" y="50">1</tspan>
+                            <tspan x="0" y="100">1</tspan>
+                            <tspan x="0" y="150">0</tspan>
+                            <tspan x="0" y="200">0</tspan>
+
+                            <animateMotion keyTimes="0; 0.075;0.175; 0.325; 0.425; 0.575;0.675;0.825;0.925; 1"
+                                           values="0,0;0,-25;0,-25;0,-75;0,-75;0,-125;0,-125;0,-175;0,-175;0,-204"
+                                           repeatCount="indefinite"
+                                           dur="5s"
+                                           calcMode="linear">
+                            </animateMotion>
+                        </text>
+                    </svg>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="400" height="72px" viewBox="-20 0 100 36">
+                        <text style="font-size:20px;fill:#000000;font-family:Garamond" x="0" y="0">
+                            <tspan x="0" y="50">0</tspan>
+                            <tspan x="0" y="100">0</tspan>
+                            <tspan x="0" y="150">1</tspan>
+                            <tspan x="0" y="200">1</tspan>
+
+                            <animateMotion keyTimes="0; 0.075;0.175; 0.325; 0.425; 0.575;0.675;0.825;0.925; 1"
+                                           values="0,0;0,-25;0,-25;0,-75;0,-75;0,-125;0,-125;0,-175;0,-175;0,-204"
+                                           repeatCount="indefinite"
+                                           dur="3s"
+                                           calcMode="linear">
+                            </animateMotion>
+                        </text>
+                    </svg>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="400" height="72px" viewBox="-20 0 100 36">
+                        <text style="font-size:20px;fill:#000000;font-family:Garamond" x="0" y="0">
+                            <tspan x="0" y="50">1</tspan>
+                            <tspan x="0" y="100">0</tspan>
+                            <tspan x="0" y="150">1</tspan>
+                            <tspan x="0" y="200">0</tspan>
+
+                            <animateMotion keyTimes="0; 0.075;0.175; 0.325; 0.425; 0.575;0.675;0.825;0.925; 1"
+                                           values="0,0;0,-25;0,-25;0,-75;0,-75;0,-125;0,-125;0,-175;0,-175;0,-204"
+                                           repeatCount="indefinite"
+                                           dur="2s"
+                                           calcMode="linear">
+                            </animateMotion>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+
+        </div>    
+           
+    </div>
+
+
+    <div id="table-menu" class="col-lg-12">
+        <img id="Img-table" class="col-lg-12" src="img/background.png" />
+        <menu id="ico" class="col-lg-12">
+            <ul>
+                <li class="li1 col-lg-3"><a href="#About_Me"><img class="col-lg-offset-3 col-lg-6 " src="img/AboutMe.png" /><br /> </a><div class="col-lg-offset-3 col-lg-6">O Себе</div> </li>
+                <li class="li2 col-lg-3"><a href="#Skills"><img class="col-lg-offset-3 col-lg-6" src="img/icon2.png" /><br />    </a><div class="col-lg-offset-3 col-lg-6">Навыки</div> </li>
+                <li class="li3 col-lg-3"><a href="#Contacts"><img class="col-lg-offset-3 col-lg-6" src="img/icon3.png" /><br />  </a><div id="kontakt" class="col-lg-offset-3 col-lg-6">Контакты</div> </li>
+                <li class="li4 col-lg-3"><a href="#Tools"><img class="col-lg-offset-3 col-lg-6" src="img/icon4.png" /><br />  </a><div class="col-lg-offset-3 col-lg-6">Инструменты</div> </li>
+            </ul>
+        </menu>
+    </div>
+
+    <div class="content col-lg-12 col-md-12 col-sm-12" >
+        <div class="quote col-lg-3 col-md-3">
+            <div id="p1">Невозможно жить лучше, чем проводя жизнь в стремлении стать совершеннее.</div>
+            <div id="p2">Не важно, будешь ли ты лучше кого-то. Важно, будешь ли ты лучше, чем вчера.</div>
+            <div id="p3">Пытайся достичь невозможного, если хочешь, чтобы твоя работа стала лучше.</div>
+        </div>
+
+        <div class="col-lg-offset-1 col-lg-4 col-lg-offset-1 col-md-offset-1 col-md-4 col-md-offset-1 col-sm-offset-3 col-sm-6 col-sm-offset-3">
+            <img class="MyImg col-lg-12 col-md-12 col-sm-12" src="img/my.png" />
+        </div>      
+    </div>
+    
+    <div class="wow rollIn" data-wow-duration="2s"data-wow-delay="1s"><h2 class="h2">Навыки<a name="Skills"></a></h2></div>
+
+    <div class="Skills col-lg-12 col-md-12">
+        <div id="C" class="Skill col-lg-4 col-md-4"> <img src="img/ccc2.png" /> </div>
+        <div class="Skill col-lg-4 col-md-4"style="padding-top:15px;"><a href="https://github.com/YevheniiGorg/ToDoList.git"><img src="img/ASP.png" /></a></div>
+        <div class="Skill col-lg-4 col-md-4"><a href="https://github.com/YevheniiGorg/Notepad.git"><img src="img/forms.png" /></a></div>
+
+        <div class="Skill col-lg-4 col-md-4"><img src="img/WPF.png" /></div>
+        <div class="Skill_chel col-lg-4 col-md-4"><img id="Chel" src="img/за комп2.png"/></div>
+        <div class="Skill col-lg-4 col-md-4"><img src="img/UWP.png" /></div>
+        <br />
+        <div id="C2" class="Skill col-lg-4 col-md-4"><a href="https://github.com/YevheniiGorg/Checkers.git"><img src="img/c2_2.png" /></a></div>    
+        <div class="Skill col-lg-4 col-md-4"></div>
+        <div class="Skill col-lg-4 col-md-4"><img src="img/HTML.png" /></div>
+        <div class="Skill col-lg-4 col-md-4"><img src="img/css.png" /></div>
+
+        <div class="Skill col-lg-4 col-md-4"><img src="img/jQuery.png" /></div>
+        <div class="Skill col-lg-4 col-md-4"><img src="img/xaml.png" /></div>
+        <div class="Skill col-lg-4 col-md-4"><img src="img/sql.png" /></div>
+        <div class="Skill col-lg-4 col-md-4"><img id="Entity" src="img/Entity.png" /></div>
+    </div>
+
+   <div class="wow rollIn" data-wow-duration="2s"data-wow-delay="1s"><h2 class="h2 ">Инструменты <a name="Tools"></a></h2></div> 
+   
+    <div class="tools col-lg-12">
+        <img class="col-lg-6 col-md-6 col-sm-6" src="img/visual-studio-2015.png"/>
+        <img  src="img/ms-sql-server.png"/>
+    </div>
+
+   <div class="wow rollIn" data-wow-duration="2s"data-wow-delay="1s"><h2 class="h2 ">О себе<a name="About_Me"></a></h2></div> 
+    <div id="About_my_content">
+
+        <h4>
+            <p> Родился 13.08.1985 в городе Желтые Воды, где проживаю и сейчас. </p>
+            <p>С 2002 года по 2007 учился в Университете гражданской защиты в городе Харьков. </p>
+            <p> С 2014 года учусь в компьютерной академии "ШАГ" в городе Днепр, специальность - программист. За время обучения получил ряд сертификатов:</p>
+            <ul>
+                <li>IT Essentials: PC Hardware and Software Computer Academy Step</li>
+                <li>CCNA R&S: Introduction to Networks Computer Academy Step</li>
+                <li>Microsoft 2778 Querying and Modifying Data in Microsoft SQL Server 2008 with Transact-SQL</li>
+                <li>Microsoft 6369 Implementing and Maintaining Microsoft SQL Server 2008</li>
+                <li>Microsoft 10157 Monitoring and Controlling Resources in Microsoft SQL Server 2008</li>
+                <li>Microsoft 6370 Microsoft SQL Server 2008 R2 Database Development</li>
+                <li>Microsoft 10151 Installing and Configuring Microsoft SQL Server 2008</li>
+                <li>Microsoft 10152 Creating and Managing Databases in Microsoft SQL Server 2008</li>
+                <li>Microsoft 10153 Planning, Creating, and Optimizing Indexes in Microsoft SQL Server 2008</li>
+                <li>Microsoft 10154 Backing Up and Restoring Databases in Microsoft SQL Server 2008</li>
+                <li>Microsoft 10155 Managing Security in Microsoft SQL Server 2008</li>
+                <li>Microsoft 10156 Automating Administrative Tasks in Microsoft SQL Server 2008</li>
+            </ul>
+        </h4>
+        <h3 class="About_my_content"> Языки:</h3>
+            <h4>
+                <p>
+                    Уверенно знаю русский, украинский. Английский - средний уровень.
+                </p>
+            </h4>
+            <h3 class="About_my_content"> Личные качества:</h3>
+                <h4>
+                    <p>
+                        Честный, пунктуальный, с отличным логическим мышлением, коммуникабельный. В работе - целеустремленный и инициативный.
+                        Ответственный в принятии важных решений. Способен к самообразованию. Есть желаение учиться и развиваться как программист.
+                    </p>
+                </h4>
+                <h3 class="About_my_content">Хобби:</h3>
+                <h4>
+                    <p>
+                        Люблю рыбалку, спорт, и все что связано с авто и мото.
+                    </p>
+                </h4>
+    </div>
+
+    <div class="wow rotateInUpLeft" data-wow-duration="2s"><h2 class="h2 ">Контакты <a name="Contacts"></a></h2></div>
+    <div id="div_contacts">
+        <ul>
+            <li><img class="contacts" title="Telephone" src="img/telephon.png" />  +38(066)36-37-842</li>
+            <li><img class="contacts" title="E-Mail" src="img/email.png" />  gorg120208@gmail.com</li>
+            <li><img class="contacts" title="Skype" src="img/skype.png" /> <a href="skype:gorg120208">My Skype</a></li>
+            <li><img class="contacts" title="linkedin" src="img/linkedin.png" /> <a href="https://ua.linkedin.com/in/евгений-кучерин-4a527710b">My linkedin</a> </li>
+        </ul>
+    </div>
+  
+    <div id="toTop"> <img title="UP" id="UP" src="img/knopka-33.png" /> </div >
+   
+</body>
+
+</html>

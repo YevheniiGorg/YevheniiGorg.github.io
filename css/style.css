@@ -1,0 +1,180 @@
+﻿body{
+     background:#c2dae8;
+}
+#head{
+    position:relative;
+    /*background-image:url('../img/computer.jpg');*/
+    height:390px;
+    padding:0;
+    margin-top:-50px;
+    background-position-x:10px;
+    
+}
+.head-beckgraund{
+    position:absolute;
+    padding:0;
+
+}
+#logo
+{ 
+  position:absolute;
+  display:none;
+  opacity: 0.6;
+  padding-top:20px;
+  padding-left:20px;   
+   
+}
+#toTop {
+    width: 100px;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    font-family: verdana;
+    font-size: 11px;
+}
+#UP{
+    height:50px;
+}
+.anim{
+    padding:0;
+    margin-left:-40px;
+    width:200px;
+     height:50px;
+}
+
+
+#table-menu{
+    display:none;
+    position:relative;
+    height:100px;
+    /*margin-top:-30px;*/
+    
+}
+#Img-table{
+    width:100%;
+    position:absolute;
+    box-shadow:15px 15px 4px -5px rgba(0, 0, 0, .2);
+}
+#ico{
+   position:absolute; 
+}
+
+
+    #ico > ul > li {
+        display: none;
+        list-style-type: none;
+        float: left;
+        padding: 0px 0px 0px 0px;
+        margin: 0px;
+        margin-top: -40px;
+        text-align: center;
+    }
+
+        #ico > ul > li > div {
+            font-family: 'Montserrat', sans-serif;
+            color: #183945;
+            font-size: 14pt;
+        }
+
+#ico>ul>li>a>img{
+/*box-shadow:5px 15px 5px -5px rgba(0, 0, 0, .2);*/
+}
+#kontakt{
+     margin-top:-10px;
+}
+.quote{
+    font-family: 'Open Sans',sans-serif;
+    font-size:18pt;
+    margin-top:30px;
+    margin-left:20px;
+}
+.content {
+    border: 2px solid CornflowerBlue;
+    border-radius: 26px;
+    background-color: #98a8ba;
+    opacity: 0.8;
+    margin-top: 50px;
+    margin-bottom:80px;
+  
+}
+#p1 {
+    display: none;
+}
+
+#p2 {
+    display: none;
+}
+
+#p3 {
+    display: none;
+}
+.MyImg{
+    width:80%;
+}
+
+.footer{
+    height:100px; 
+    min-height: 50px;
+    background-color:#19365e;
+}
+.Skills {
+    height:auto;
+    margin-top: 10px;
+    margin-bottom:80px;
+    padding-bottom:30px;
+    background-color: #98a8ba;
+    opacity: 0.8;
+    border-radius: 26px;
+    border: 2px solid CornflowerBlue;
+   
+}
+.Skill{
+    height:130px;
+}
+.Skill_chel{
+     height:50px;
+
+}
+#Entity{
+    height:400px;
+    margin-top:-140px;
+}
+.h2{
+    font-family: 'Ruslan Display', cursive;
+    font-size:48px;
+    text-align:center;
+    margin-top:60px;
+    margin-bottom:30px;
+   
+}
+.tools{
+    margin-bottom:60px;
+}
+#div_contacts {
+    font-size: 20pt;
+    background-color:#98a8ba;
+    opacity: 0.8;
+    border-radius: 26px;
+    border: 2px solid CornflowerBlue;
+    height: auto;
+}
+.About_my_content{
+    margin-left:20px;
+}
+#About_my_content{
+    margin-left:20px;
+}
+.contacts{
+    height:50px;
+   
+}
+
+
+
+
+
+
