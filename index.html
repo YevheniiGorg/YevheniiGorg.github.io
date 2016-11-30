@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+   <!--<link rel="stylesheet" href="css/jquery-ui.min.css"/>-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="css/animate.css" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.1.1.js"></script>
-    
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="css/animate.css" rel="stylesheet"/>
-   
-    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"/>
-
+    <!--<script src="jquery-ui.min.js"></script>-->  
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta charset="utf-8" />
     <title>My SV</title>
     
@@ -38,8 +38,7 @@
             $('.li2').delay(4000).show(1000);
             $('.li3').delay(5000).show(1000);
             $('.li4').delay(6000).show(1000);
-
-           
+          
 
             $('.li1').click(function () {
                 $('#p1').toggle(1000);              
@@ -52,8 +51,38 @@
                 setTimeout(function () { $(elem).toggle(500) }, 1000);
                 if (index == Text.length) index = 0;
                 elem = document.getElementById(Text[index++]);
-            }, 8000);         
+            }, 8000);
+
+
+            $('#Btntools').click(function () {               
+                $('html,body').animate({ scrollTop: 1300 }, 800 );
+            })
+            
+            $('#BtnCont').click(function () {               
+                $('html,body').animate({ scrollTop:2300}, 800);
+            })
+            $('#BtnSkills').click(function () {
+                $('html,body').animate({ scrollTop: 800 }, 800);
+            })
+            $('#BtnAbout').click(function () {
+                $('html,body').animate({ scrollTop: 1900 }, 800);
+            })
+
+          
+
+            $('#ImgSQL').click(function () {
+                $('#ImgBD').show(1000);
+            })
+
+            $('#ImgBD').click(function () {
+           
+                $('#ImgBD').hide("drop");
+               
+            })
+
         });
+
+
         $(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() != 0) {
@@ -64,11 +93,15 @@
             });
 
             $('#toTop').click(function () {
+              
                 $('body,html').animate({ scrollTop: 0 }, 800);
             });
+
+
+
         });
       
-        
+      
 
     </script>
 
@@ -198,10 +231,10 @@
         <img id="Img-table" class="col-lg-12" src="img/background.png" />
         <menu id="ico" class="col-lg-12">
             <ul>
-                <li class="li1 col-lg-3"><a href="#About_Me"><img class="col-lg-offset-3 col-lg-6 " src="img/AboutMe.png" /><br /> </a><div class="col-lg-offset-3 col-lg-6">O Себе</div> </li>
-                <li class="li2 col-lg-3"><a href="#Skills"><img class="col-lg-offset-3 col-lg-6" src="img/icon2.png" /><br />    </a><div class="col-lg-offset-3 col-lg-6">Навыки</div> </li>
-                <li class="li3 col-lg-3"><a href="#Contacts"><img class="col-lg-offset-3 col-lg-6" src="img/icon3.png" /><br />  </a><div id="kontakt" class="col-lg-offset-3 col-lg-6">Контакты</div> </li>
-                <li class="li4 col-lg-3"><a href="#Tools"><img class="col-lg-offset-3 col-lg-6" src="img/icon4.png" /><br />  </a><div class="col-lg-offset-3 col-lg-6">Инструменты</div> </li>
+                <li class="li1 col-lg-3"><a href="#About_Me"><img id="BtnAbout" class="col-lg-offset-3 col-lg-6 " src="img/AboutMe.png" /><br /> </a><div class="col-lg-offset-3 col-lg-6">O Себе</div> </li>
+                <li class="li2 col-lg-3"><a href="#Skills"><img id="BtnSkills" class="col-lg-offset-3 col-lg-6" src="img/icon2.png" /><br /> </a><div class="col-lg-offset-3 col-lg-6">Навыки</div> </li>
+                <li class="li3 col-lg-3"><a href="#Contacts"><img id="BtnCont" class="col-lg-offset-3 col-lg-6" src="img/icon3.png" /><br />  </a><div id="kontakt" class="col-lg-offset-3 col-lg-6">Контакты</div> </li>
+                <li class="li4 col-lg-3"><a href="#Tools"><img id="Btntools" class="col-lg-offset-3 col-lg-6" src="img/icon4.png" /><br /> </a> <div class="col-lg-offset-3 col-lg-6">Инструменты</div> </li>
             </ul>
         </menu>
     </div>
@@ -215,35 +248,40 @@
 
         <div class="col-lg-offset-1 col-lg-4 col-lg-offset-1 col-md-offset-1 col-md-4 col-md-offset-1 col-sm-offset-3 col-sm-6 col-sm-offset-3">
             <img class="MyImg col-lg-12 col-md-12 col-sm-12" src="img/my.png" />
-        </div>      
+        </div>   
+        <div  class="quote col-lg-3 col-md-3">
+            <div id="p4">Чем активнее ты пробуешь что-то новое, тем больше у тебя шансов наткнуться на что-то действительно стоящее.</div>
+          
+        </div>   
     </div>
     
     <div class="wow rollIn" data-wow-duration="2s"data-wow-delay="1s"><h2 class="h2">Навыки<a name="Skills"></a></h2></div>
 
     <div class="Skills col-lg-12 col-md-12">
         <div id="C" class="Skill col-lg-4 col-md-4"> <img src="img/ccc2.png" /> </div>
-        <div class="Skill col-lg-4 col-md-4"style="padding-top:15px;"><a href="https://github.com/YevheniiGorg/ToDoList.git"><img src="img/ASP.png" /></a></div>
-        <div class="Skill col-lg-4 col-md-4"><a href="https://github.com/YevheniiGorg/Notepad.git"><img src="img/forms.png" /></a></div>
+        <div class="Skill col-lg-4 col-md-4"style="padding-top:15px;"><a href="https://github.com/YevheniiGorg/ToDoList.git"><img class="ImgSkill" src="img/ASP.png" /></a></div>
+        <div class="Skill col-lg-4 col-md-4"><a href="https://github.com/YevheniiGorg/Notepad.git"><img class="ImgSkill" src="img/forms.png" /></a></div>
 
         <div class="Skill col-lg-4 col-md-4"><img src="img/WPF.png" /></div>
         <div class="Skill_chel col-lg-4 col-md-4"><img id="Chel" src="img/за комп2.png"/></div>
         <div class="Skill col-lg-4 col-md-4"><img src="img/UWP.png" /></div>
         <br />
-        <div id="C2" class="Skill col-lg-4 col-md-4"><a href="https://github.com/YevheniiGorg/Checkers.git"><img src="img/c2_2.png" /></a></div>    
+        <div id="C2" class="Skill col-lg-4 col-md-4"><a href="https://github.com/YevheniiGorg/Checkers.git"><img class="ImgSkill" src="img/c2_2.png" /></a></div>    
         <div class="Skill col-lg-4 col-md-4"></div>
         <div class="Skill col-lg-4 col-md-4"><img src="img/HTML.png" /></div>
         <div class="Skill col-lg-4 col-md-4"><img src="img/css.png" /></div>
 
         <div class="Skill col-lg-4 col-md-4"><img src="img/jQuery.png" /></div>
         <div class="Skill col-lg-4 col-md-4"><img src="img/xaml.png" /></div>
-        <div class="Skill col-lg-4 col-md-4"><img src="img/sql.png" /></div>
+        <div id="SkillSQL" class="Skill col-lg-4 col-md-4"><a href="#C"><img class="ImgSkill" id="ImgSQL" src="img/sql.png" /></a></div>
+       
         <div class="Skill col-lg-4 col-md-4"><img id="Entity" src="img/Entity.png" /></div>
     </div>
-
-   <div class="wow rollIn" data-wow-duration="2s"data-wow-delay="1s"><h2 class="h2 ">Инструменты <a name="Tools"></a></h2></div> 
+    <img id="ImgBD" src="img/BD.png" />
+   <div id="Tools_" class="wow rollIn" data-wow-duration="2s"data-wow-delay="1s"><h2 class="h2 ">Инструменты <a  name="Tools"></a></h2></div> 
    
     <div class="tools col-lg-12">
-        <img class="col-lg-6 col-md-6 col-sm-6" src="img/visual-studio-2015.png"/>
+        <img id="vs" class="col-lg-6 col-md-6 col-sm-6" src="img/visual-studio-2015.png"/>
         <img  src="img/ms-sql-server.png"/>
     </div>
 
@@ -253,8 +291,11 @@
         <h4>
             <p> Родился 13.08.1985 в городе Желтые Воды, где проживаю и сейчас. </p>
             <p>С 2002 года по 2007 учился в Университете гражданской защиты в городе Харьков. </p>
-            <p> С 2014 года учусь в компьютерной академии "ШАГ" в городе Днепр, специальность - программист. За время обучения получил ряд сертификатов:</p>
+            <p> С 2014 года учусь в компьютерной академии "ШАГ" в городе Днепр, специальность - программист. </p>
+            <p>За время обучения получил ряд сертификатов:</p>
             <ul>
+                <li>Microsoft 6644: Creating an Application by Using Windows Presentation Foundation</li>
+                <li>Microsoft 2389: Programming with Microsoft® ADO.NET</li>
                 <li>IT Essentials: PC Hardware and Software Computer Academy Step</li>
                 <li>CCNA R&S: Introduction to Networks Computer Academy Step</li>
                 <li>Microsoft 2778 Querying and Modifying Data in Microsoft SQL Server 2008 with Transact-SQL</li>
