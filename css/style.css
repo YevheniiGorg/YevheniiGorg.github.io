@@ -1,9 +1,8 @@
-﻿body{
+body{
      background:#c2dae8;
 }
 #head{
     position:relative;
-    /*background-image:url('../img/computer.jpg');*/
     height:390px;
     padding:0;
     margin-top:-50px;
@@ -28,7 +27,7 @@
     width: 100px;
     padding: 5px;
     position: fixed;
-    bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+    bottom: 10px; 
     right: 10px;
     cursor: pointer;
     display: none;
@@ -46,13 +45,10 @@
      height:50px;
 }
 
-
 #table-menu{
     display:none;
     position:relative;
     height:100px;
-    /*margin-top:-30px;*/
-    
 }
 #Img-table{
     width:100%;
@@ -62,7 +58,6 @@
 #ico{
    position:absolute; 
 }
-
 
     #ico > ul > li {
         display: none;
@@ -80,9 +75,7 @@
             font-size: 14pt;
         }
 
-#ico>ul>li>a>img{
-/*box-shadow:5px 15px 5px -5px rgba(0, 0, 0, .2);*/
-}
+
 #kontakt{
      margin-top:-10px;
 }
@@ -149,11 +142,12 @@
     text-align:center;
     margin-top:60px;
     margin-bottom:30px;
-   
+   text-shadow:0.1em 0.1em 0.2em #808080;
 }
 .tools{
     margin-bottom:60px;
 }
+
 #div_contacts {
     font-size: 20pt;
     background-color:#98a8ba;
@@ -169,12 +163,28 @@
     margin-left:20px;
 }
 .contacts{
-    height:50px;
-   
+    height:50px;  
+}
+#ImgBD {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    height:98%;
+    opacity: 1;
+    z-index:999;
 }
 
+.ImgSkill{
+    width: 200px;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+}
 
+  .ImgSkill:hover {
+        width: 250px;
+    }
 
-
-
-
+  
