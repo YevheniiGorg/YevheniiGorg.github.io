@@ -1,5 +1,5 @@
 ﻿body{
-     background:#c2dae8;
+    background:#c2dae8;
 }
 #head{
     position:relative;
@@ -8,7 +8,7 @@
     padding:0;
     margin-top:-50px;
     background-position-x:10px;
-    
+
 }
 .head-beckgraund{
     position:absolute;
@@ -16,13 +16,13 @@
 
 }
 #logo
-{ 
-  position:absolute;
-  display:none;
-  opacity: 0.6;
-  padding-top:20px;
-  padding-left:20px;   
-   
+{
+    position:absolute;
+    display:none;
+    opacity: 0.6;
+    padding-top:20px;
+    padding-left:20px;
+
 }
 #toTop {
     width: 100px;
@@ -43,7 +43,7 @@
     padding:0;
     margin-left:-40px;
     width:200px;
-     height:50px;
+    height:50px;
 }
 
 
@@ -52,7 +52,7 @@
     position:relative;
     height:100px;
     /*margin-top:-30px;*/
-    
+
 }
 #Img-table{
     width:100%;
@@ -60,31 +60,32 @@
     box-shadow:15px 15px 4px -5px rgba(0, 0, 0, .2);
 }
 #ico{
-   position:absolute; 
+    /*position:absolute; */
+    position:relative;
 }
 
 
-    #ico > ul > li {
-        display: none;
-        list-style-type: none;
-        float: left;
-        padding: 0px 0px 0px 0px;
-        margin: 0px;
-        margin-top: -40px;
-        text-align: center;
-    }
+#ico > ul > li {
+    display: none;
+    list-style-type: none;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    margin-top: -40px;
+    text-align: center;
+}
 
-        #ico > ul > li > div {
-            font-family: 'Montserrat', sans-serif;
-            color: #183945;
-            font-size: 14pt;
-        }
+#ico > ul > li > div {
+    font-family: 'Montserrat', sans-serif;
+    color: #183945;
+    font-size: 14pt;
+}
 
 #ico>ul>li>a>img{
-/*box-shadow:5px 15px 5px -5px rgba(0, 0, 0, .2);*/
+    /*box-shadow:5px 15px 5px -5px rgba(0, 0, 0, .2);*/
 }
 #kontakt{
-     margin-top:-10px;
+    margin-top:-10px;
 }
 .quote{
     font-family: 'Open Sans',sans-serif;
@@ -97,9 +98,10 @@
     border-radius: 26px;
     background-color: #98a8ba;
     opacity: 0.8;
-    margin-top: 50px;
-    margin-bottom:80px;
-  
+    margin: 50px 30px 80px 5px;
+    /*margin-top: 50px;*/
+    /*margin-bottom:80px;*/
+    box-shadow:15px 15px 4px -5px rgba(0, 0, 0, .2);
 }
 #p1 {
     display: none;
@@ -117,43 +119,50 @@
 }
 
 .footer{
-    height:100px; 
+    height:100px;
     min-height: 50px;
     background-color:#19365e;
 }
 .Skills {
     height:auto;
-    margin-top: 10px;
-    margin-bottom:80px;
+    margin: 10px 30px 80px 5px;
+    /*margin-top: 10px;*/
+    /*margin-bottom:80px;*/
     padding-bottom:30px;
     background-color: #98a8ba;
     opacity: 0.8;
     border-radius: 26px;
     border: 2px solid CornflowerBlue;
-   
+    box-shadow:15px 15px 4px -5px rgba(0, 0, 0, .2);
 }
 .Skill{
     height:130px;
 }
 .Skill_chel{
-     height:50px;
+    height:50px;
 
 }
-#Entity{
-    height:400px;
-    margin-top:-140px;
-}
+/*#Entity{*/
+/*height:400px;*/
+/*margin-top:-140px;*/
+/*}*/
+
 .h2{
     font-family: 'Ruslan Display', cursive;
     font-size:48px;
     text-align:center;
     margin-top:60px;
     margin-bottom:30px;
-   
+
 }
 .tools{
     margin-bottom:60px;
 }
+
+.tools > img{
+    max-height: 400px;
+}
+
 #div_contacts {
     font-size: 20pt;
     background-color:#98a8ba;
@@ -170,7 +179,18 @@
 }
 .contacts{
     height:50px;
-   
+
+}
+#php{
+    padding-top: 35px;
+}
+#Framework{
+    padding-top: 70px;
+}
+@media screen and (max-width:988px) {
+    #Chel {
+        display: none;
+    }
 }
 
 
